@@ -1,0 +1,178 @@
+[
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.ProjetoController",
+    "Method": "CriarProjeto",
+    "RelativePath": "api/Projeto/CriarProjeto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projetoCriacaoDto",
+        "Type": "GerenciadorTarefasAPI.Dto.Projeto.ProjetoCriacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[GerenciadorTarefasAPI.Models.ProjetoModel, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.ProjetoController",
+    "Method": "ListarProjetos",
+    "RelativePath": "api/Projeto/ListarProjetos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[GerenciadorTarefasAPI.Models.ProjetoModel, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.TarefaController",
+    "Method": "BuscarTarefasPorIdProjeto",
+    "RelativePath": "api/Tarefa/BuscarTarefasPorIdProjeto/{idProjeto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[GerenciadorTarefasAPI.Dto.Tarefa.TarefaDto, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.TarefaController",
+    "Method": "CriarTarefa",
+    "RelativePath": "api/Tarefa/CriarTarefa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarefaCriacaoDto",
+        "Type": "GerenciadorTarefasAPI.Dto.Tarefa.TarefaCriacaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[GerenciadorTarefasAPI.Models.TarefaModel, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.TarefaController",
+    "Method": "EditarTarefa",
+    "RelativePath": "api/Tarefa/EditarTarefa",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarefaEdicaoDto",
+        "Type": "GerenciadorTarefasAPI.Dto.Tarefa.TarefaEdicaoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[GerenciadorTarefasAPI.Models.TarefaModel, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.TarefaController",
+    "Method": "ExcluirTarefa",
+    "RelativePath": "api/Tarefa/ExcluirTarefa",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTarefa",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[GerenciadorTarefasAPI.Models.TarefaModel, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GerenciadorTarefasAPI.Controllers.TarefaController",
+    "Method": "InserirComentario",
+    "RelativePath": "api/Tarefa/InserirComentario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comentarioTarefaDto",
+        "Type": "GerenciadorTarefasAPI.Dto.Tarefa.ComentarioTarefaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GerenciadorTarefasAPI.Models.ResponseModel\u00601[[GerenciadorTarefasAPI.Models.ComentarioTarefaModel, GerenciadorTarefasAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
