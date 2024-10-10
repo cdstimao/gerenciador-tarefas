@@ -329,7 +329,6 @@ Para testar API Gerenciador de tarefas, siga estas etapas:
 }
 
 ```
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
 
 ## 📫 Contribuindo para o Gerenciador de Tarefas
 
