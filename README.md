@@ -21,15 +21,12 @@
 1. **Prioridades de Tarefas:**
     - Cada tarefa deve ter uma prioridade atribuída (baixa, média, alta).
     - Não é permitido alterar a prioridade de uma tarefa depois que ela foi criada.
-2. **Restrições de Remoção de Projetos:**
-    - Um projeto não pode ser removido se ainda houver tarefas pendentes associadas a ele.
-    - Caso o usuário tente remover um projeto com tarefas pendentes, a API deve retornar um erro e sugerir a conclusão ou remoção das tarefas primeiro.
-3. **Histórico de Atualizações:**
+2. **Histórico de Atualizações:**
     - Cada vez que uma tarefa for atualizada (status, detalhes, etc.), a API deve registrar um histórico de alterações para a tarefa.
     - O histórico de alterações deve incluir informações sobre o que foi modificado, a data da modificação e o usuário que fez a modificação.
-4. **Limite de Tarefas por Projeto:**
+3. **Limite de Tarefas por Projeto:**
     - Cada projeto tem um limite máximo de 20 tarefas. Tentar adicionar mais tarefas do que o limite deve resultar em um erro.
-5. **Comentários nas Tarefas:**
+4. **Comentários nas Tarefas:**
     - Os usuários podem adicionar comentários a uma tarefa para fornecer informações adicionais.
     - Os comentários devem ser registrados no histórico de alterações da tarefa.
       
